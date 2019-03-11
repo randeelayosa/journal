@@ -1,10 +1,26 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
   <head>
-    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HOME</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script type="text/javascript" src="bundle.js"></script>
+    <title>Dear Diary</title>
   </head>
   <body>
-    <h1>TITLE</h1>
+    <h1>Joe's Super Secret Embarassing Diary</h1>
+    <form id="journal-form">
+      <input id="title" type="text" name="title" placeholder="Title" ><br>
+      <input id="date" type="date" name="date" placeholder="Date" ><br>
+      <textarea id="post" type="text" rows="30" cols="90" name="post" value="post" placeholder="Spill the tea sis, what happened today?"></textarea>
+      <br><button id="journal-form" type="submit" name="button">post</button>
+    </form>
+    <div id="entry">
+      <div>Entry: <span class="title"></span></div>
+      <div>Date: <span class="date"></span></div>
+      <div>Post Preview: <span class="teaser"></span></div>
+      <div>Full Post: <span class="post"></span></div>
+      <div>Word Count: <span class="words-count"></span></div>
+      <div>Vowel Count: <span class="vowels-count"></span></div>
+      <div>Consonant Count: <span class="consonant-count"></span></div>
+    </div>
   </body>
 </html>

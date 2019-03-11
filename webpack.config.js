@@ -5,9 +5,9 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
 
-  entry: './src/index.js',
+  entry: './src/main.js',
   output: {
-    filename: 'main.js',
+    filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist')
   },
 
@@ -26,6 +26,12 @@ module.exports = {
             'css-loader',
             'sass-loader'
         ]
+      },
+
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: "eslint-loader"
       },
 
       {
@@ -50,7 +56,6 @@ module.exports = {
       }
 
     ]
-
   },
 
   plugins: [
