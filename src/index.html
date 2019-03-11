@@ -3,24 +3,16 @@
   <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script type="text/javascript" src="bundle.js"></script>
-    <title>Dear Diary</title>
+    <title>Simon</title>
   </head>
   <body>
-    <h1>Joe's Super Secret Embarassing Diary</h1>
-    <form id="journal-form">
-      <input id="title" type="text" name="title" placeholder="Title" ><br>
-      <input id="date" type="date" name="date" placeholder="Date" ><br>
-      <textarea id="post" type="text" rows="30" cols="90" name="post" value="post" placeholder="Spill the tea sis, what happened today?"></textarea>
-      <br><button id="journal-form" type="submit" name="button">post</button>
-    </form>
-    <div id="entry">
-      <div>Entry: <span class="title"></span></div>
-      <div>Date: <span class="date"></span></div>
-      <div>Post Preview: <span class="teaser"></span></div>
-      <div>Full Post: <span class="post"></span></div>
-      <div>Word Count: <span class="words-count"></span></div>
-      <div>Vowel Count: <span class="vowels-count"></span></div>
-      <div>Consonant Count: <span class="consonant-count"></span></div>
+    <div class="play">
+      <button id="red" type="button" name="red"></button>
+      <button id="blue" type="button" name="blue"></button>
+      <button id="green" type="button" name="green"></button>
+      <button id="yellow" type="button" name="yellow"></button>
+      <span id="test"></span>
     </div>
+    <button id="start" type="button" name="start">Start</button>
   </body>
 </html>
